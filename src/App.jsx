@@ -38,10 +38,8 @@ function App() {
   
   return (
    <section className='overflow-hidden dark2'>
-    <BrowserRouter>
-   {/* {
-    locatio
-   } */}
+    {/* <BrowserRouter>
+
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about-us' element={<About/>}/>
@@ -69,7 +67,43 @@ function App() {
         <Route path='/stills' element={<Stills/>}/>
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </BrowserRouter> */}
+
+      <section className="hosting-expired">
+      <div className="expired-card">
+        <div className="expired-icon">!</div>
+
+        <span className="expired-badge">
+          WEBSITE TEMPORARILY UNAVAILABLE
+        </span>
+
+        <h1>Hosting Service Expired</h1>
+
+        <p className="expired-description">
+          This website is temporarily unavailable because
+          the current hosting deployment has expired.
+        </p>
+
+        <div className="expired-notice">
+          <strong>Action Required</strong>
+          <p>
+            The website needs to be redeployed or rehosted
+            to restore access to its pages and services.
+          </p>
+        </div>
+
+        <p className="expired-footer">
+          We apologize for the inconvenience and appreciate
+          your patience while the website is being restored.
+        </p>
+
+        <div className="expired-line"></div>
+
+        <span className="expired-brand">
+          WEBSITE STATUS NOTIFICATION
+        </span>
+      </div>
+    </section>
    </section>
   )
 }
